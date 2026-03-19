@@ -5,3 +5,26 @@
     filter: blur(4px) brightness(0.7);
     z-index: -1; /* behind everything */
 }
+body {
+    left: 1rem;
+    position: absolute;
+}
+
+.content {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.content hgroup {
+    flex: 1;
+}
+
+.content img {
+    max-width: 300px;
+    height: auto;
+}
+
+img {
+    border-radius: 10px;
+}
