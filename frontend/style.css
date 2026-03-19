@@ -1,0 +1,7 @@
+.bg {
+    position: fixed; /* stays in place */
+    inset: 0; /* full screen */
+    background-image: url("img/steamunlocked-bg-ai-extendet.png");
+    filter: blur(4px) brightness(0.7);
+    z-index: -1; /* behind everything */
+}

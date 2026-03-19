@@ -1,0 +1,40 @@
+<head>
+    <meta charset="utf-8" />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.8/dist/htmx.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>This site</title>
+</head>
+<br>
+    <div class="bg"></div>
+    <div hx-get="navbar.html" hx-trigger="load" hx-target="#navbar"></div>
+    <div id="navbar"></div>
+    <h1>Tech stack</h1>
+    <hgroup>
+        <li>
+            <a href="https://htmx.org/">HTMX</a> is so awsome for simple loading
+            of parts of things so i dont need to put the entire site here its
+            bassicly html components. sooo usefull
+        </li>
+        <li>
+            <a href="https://picocss.com/"> PICO</a> CSS. Also very nice for
+            simple clean writing you dont need any classes just html
+        </li>
+        <li>
+            Simple busybox docker compose i dont know much about it its a
+            webserver i guess
+        </li>
+    </hgroup>
+    <br>This site kinda a playground i look at a once every 5 months tbh</br>
+    <footer>
+        <p>
+            <a href="https://github.com/nolongeractivemp3/homepage">
+                Unmaintained Source code</a
+            >
+        </p>
+    </footer>
+</body>

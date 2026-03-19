@@ -1,13 +1,9 @@
 services:
-      php_app:
-        image: php:8.3-fpm
-        volumes:
-          - ./frontend:/var/www/html
-      nginx_server:
-        image: nginx:alpine
-        ports:
-          - "1234:80" # change the first port number to match your needs
-        volumes:
-          - ./frontend:/var/www/html
-          - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
-        restart: always
+  homepage:
+    image: busybox:1.36
+    command: sh -c "httpd -f -v -p 80 -h /www"
+    ports:
+      - "1234:80"
+    volumes:
+      - ./frontend:/www:ro
+    restart: unless-stopped
