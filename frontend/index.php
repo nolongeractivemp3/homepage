@@ -1,0 +1,78 @@
+<head>
+    <meta charset="utf-8" />
+    <title>Stupid Home Page</title>
+
+    <meta
+        name="description"
+        content="Mein privater Tech-Stack auf einem Raspberry Pi 4b. Ich hoste File Browser, Gitea und eigene Scraper über Docker und WireGuard."
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <!-- <li>
+                <a href="https://bsky.app/profile/evacoold.bsky.social"
+                    >BlueSky</a
+                >
+            </li>-->
+            <li>
+                <a href="https://github.com/nolongeractivemp3"
+                    >My inactive af github</a
+                >
+            </li>
+        </ul>
+    </nav>
+    <hgroup>
+        <h1>Hardware</h1>
+        <p>
+            Ich hoste es auf einem kleinen Raspberry Pi mit 4 GB RAM und einer
+            128-GB-MicroSD-Karte.
+        </p>
+        <h1>Software</h1>
+        <p>
+            Ich benutze das Standard Raspberry Pi OS und hoste fast alles über
+            Docker (Compose). Ich hoste folgende Dienste in keinem bestimmten
+            Reihenfolge:
+        </p>
+        <ul>
+            <li>Portainer für Management und so</li>
+            <li>Gitea weil GitHub stressig ist</li>
+            <li>Uptime Kuma für Monitoring</li>
+            <li>News 3001 selbst programmierter News scraper</li>
+            <li>File Browser für meine Dateien</li>
+            <li>
+                Netdata für temperatur monitoring aber Netdata ist eig nicht so
+                gut
+            </li>
+            <li>Pocketbase als Datenbank für kleine Projekte</li>
+            <li>
+                Casa OS ist eigentlich nicht so sicher deswegen enferne ich es
+                langsam so das es wenigstens nicht mehr public ist
+            </li>
+            <li>
+                BlueskyScraper habe ich selbst programmiert um meine Bluesky
+                Posts zu scrapen und in meine obsidian notes zu speichern
+            </li>
+        </ul>
+        <h1>Networking</h1>
+        <p>
+            Ich benutze (leider) Wifi weil Kabel stressig sind. Portforwarding
+            funktioniert auf dem Router nicht deswegen lasse ich alles über
+            WireGuard an einen VPS von Oracle (Oracle ist schlecht ich weiß aber
+            geht nicht anders und sie kriegen kein Geld von mir) und von da mit
+            socat leiten damit es eine statische IP hat.
+            <br />
+            Die Domain habe ich von Hostinger und benutzt nginx für Routing und
+            so.
+        </p>
+    </hgroup>
+    <img
+        src="https://nextcloud.jaypo.ch/api/public/dl/gQyA3qHf?inline=true"
+        alt="The 'Server'"
+    />
+</body>
