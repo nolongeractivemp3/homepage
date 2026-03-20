@@ -1,7 +1,77 @@
+:root {
+    --content-max: 48rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
 .bg {
-    position: fixed; /* stays in place */
-    inset: 0; /* full screen */
+    position: fixed;
+    inset: 0;
     background-image: url("img/steamunlocked-bg-ai-extendet.png");
+    background-position: center;
+    background-size: cover;
     filter: blur(4px) brightness(0.7);
-    z-index: -1; /* behind everything */
+    transform: scale(1.03);
+    z-index: -1;
+}
+
+.page-content {
+    max-width: var(--content-max);
+    margin: 0 auto;
+    padding: 0.5rem 0 2rem;
+}
+
+hgroup {
+    margin-bottom: 1.5rem;
+}
+
+hgroup h1 {
+    margin-top: 1.5rem;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: var(--content-max);
+    height: auto;
+    border-radius: 0.75rem;
+    margin: 1rem auto 2rem;
+}
+
+#navbar nav ul {
+    flex-wrap: wrap;
+    row-gap: 0.35rem;
+}
+
+#navbar nav a {
+    white-space: normal;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 0.75rem;
+    }
+
+    hgroup p,
+    hgroup li {
+        font-size: 0.95rem;
+        line-height: 1.55;
+    }
+
+    hgroup ul {
+        padding-left: 1.1rem;
+    }
+
+    img {
+        border-radius: 0.5rem;
+        margin-top: 0.75rem;
+    }
 }
