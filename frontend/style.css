@@ -1,5 +1,7 @@
 body {
-    padding: 3vw;
+    margin: 0;
+    padding: clamp(0.5rem, 1vw, 1rem);
+    position: relative;
 }
 
 .bg {
@@ -22,11 +24,6 @@ nav ul {
     flex-wrap: wrap;
     gap: 2vw;
 }
-body {
-    left: 1rem;
-    position: absolute;
-}
-
 .content {
     display: flex;
     gap: 1rem;
