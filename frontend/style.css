@@ -1,9 +1,26 @@
+body {
+    padding: 3vw;
+}
+
 .bg {
-    position: fixed; /* stays in place */
-    inset: 0; /* full screen */
+    position: fixed;
+    inset: 0;
     background-image: url("img/steamunlocked-bg-ai-extendet.png");
-    filter: blur(4px) brightness(0.7);
-    z-index: -1; /* behind everything */
+    background-size: cover;
+    background-position: center;
+    filter: blur(clamp(2px, 0.6vw, 8px)) brightness(0.7);
+    z-index: -1;
+}
+
+img {
+    width: 92vw;
+    max-width: 100%;
+    height: auto;
+}
+
+nav ul {
+    flex-wrap: wrap;
+    gap: 2vw;
 }
 body {
     left: 1rem;
