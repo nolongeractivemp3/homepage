@@ -17,7 +17,7 @@ body {
     z-index: -1;
 }
 
-img {
+.content img {
     width: 92vw;
     max-width: 100%;
     height: auto;
@@ -44,6 +44,14 @@ nav ul {
 
 img {
     border-radius: 10px;
+}
+
+.frame18-inline {
+    width: 134px;
+    height: auto;
+    margin: 0 0 0 0.35rem;
+    vertical-align: middle;
+    display: inline-block;
 }
 
 @media (max-width: 700px) {

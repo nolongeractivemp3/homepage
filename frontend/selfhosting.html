@@ -1,10 +1,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.8/dist/htmx.min.js"></script>
     <link rel="stylesheet" href="style.css" />
 
@@ -17,38 +14,37 @@
     <h1>Self-hosting</h1>
 
     <section>
-        <h2>Things I'm self-hosting</h2>
+        <h2>Hardware</h2>
+        <p>Ich hoste es auf einem kleinen Raspberry Pi mit 4 GB RAM und einer 128-GB-MicroSD-Karte.</p>
+    </section>
+    <section>
+        <h2>Docker</h2>
+        <p>Alles was ich hoste ist mit einer docker compose file pro project die auf gitea save sind</p>
+    </section>
+    <section>
+        <h2>Was hoste ich</h2>
         <ul>
-            <li>This <a href="Thissite.html">site</a> (obviously)</li>
-            <li>Gitea my beloved</li>
+            <li>Diese <a href="Thissite.html">Seite</a> (obv)</li>
+            <li>Gitea weil github halt github ist</li>
             <li>Uptime Kuma</li>
-            <li>Portainer for tech help</li>
-            <li>Some simple services I made for automation</li>
-            <li>News 3001 (one of my projects)</li>
+            <li>Portainer falls was kaputt geht</li>
+            <li>paar automatisierungs zeug</li>
+            <li><a href="https://news.jaypo.ch">News 3001</a> (hab ich selbst gemacht)</li>
             <li>
-                <a href="https://bashboard.jaypo.ch/"
-                    >Homer dashboard (maybe getting replaced by this later)</a
-                >
+                <a href="https://bashboard.jaypo.ch/">Homer dashboard</a>
             </li>
             <li>
-                <a href="https://github.com/filebrowser/filebrowser"
-                    >File browser for cloud storage</a
-                >
+                <a href="https://github.com/filebrowser/filebrowser">File browser ist halt einfach sehr nuetzlich</a>
             </li>
         </ul>
     </section>
 
     <section>
-        <h2>The Stack</h2>
+        <h2>Networking</h2>
         <p>
-            I'm using a Raspberry Pi 4 Model B (4 GB RAM). All my services run
-            on <strong>Docker</strong>, with CasaOS as my home screen.
-        </p>
-        <p>
-            I'm routing everything through a free Oracle VPS to get a static
-            public IP (my router sucks). Yes, yes, I know Oracle is bad, but I
-            do not really have another choice. At least I'm not giving them
-            money.
+            Ich benutze (leider) Wifi, weil Kabel stressig sind. Portforwarding funktioniert auf dem Router nicht, deswegen lasse ich alles über WireGuard an einen VPS von Oracle (Oracle ist schlecht ich weiß aber geht nicht anders und sie kriegen kein Geld von mir) und leite es von da mit socat weiter, damit es eine statische IP hat.
+            <h3 style="margin-top: 0;" >Routing</h3> <!--  No idea why this has inline css -->
+            Die Domain habe ich von Hostinger und ich benutze NPM (Nicht die js hoelle ich meine das nginx ui ) für Routing und so.
         </p>
     </section>
 </body>
